@@ -14,7 +14,8 @@ body,
 #homepage,
 #menupage,
 #contactpage,
-#cartpage {
+#cartpage,
+.bg-mask {
   height: 100%;
   width: 100%;
   padding: 0;
@@ -22,6 +23,7 @@ body,
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  overflow: auto;
 }
 
 main {
@@ -103,7 +105,7 @@ header {
 }
 
 #carticon {
-  height: 20px;
+  height: 25px;
   width: auto;
   align-self: center;
   justify-self: center;
@@ -148,7 +150,13 @@ footer {
   padding-bottom: 12px;
 }
 
-a {
+a,
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+input {
   all: unset;
 }
 

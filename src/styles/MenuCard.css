@@ -1,6 +1,6 @@
 .menu-card {
   border: none;
-  border-radius: 20px;
+  border-radius: 30px;
   background-color: rgba(0, 0, 0, 0.603);
   height: 150px;
   width: 300px;
@@ -9,4 +9,53 @@
   justify-content: center;
   align-items: center;
   flex-flow: wrap;
+
+  position: relative;
+}
+
+.float-buttons {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.add-to-cart {
+  height: 40px;
+  width: 40px;
+  background-color: rgb(9, 80, 9);
+  border-radius: 50%
+}
+
+.add-to-cart:hover {
+  background-color: rgb(91, 176, 91);
+}
+
+.add-to-cart:active {
+  background-color: white;
+}
+
+.delete-from-cart {
+  height: 40px;
+  width: 40px;
+  background-color: rgb(80, 9, 31);
+  border-radius: 50%
+}
+
+.delete-from-cart:hover {
+  background-color: rgb(176, 91, 122);
+}
+
+.delete-from-cart:active {
+  background-color: rgb(255, 255, 255);
+}
+
+.item-quantity {
+  width: 30px;
+  text-align: center;
 }

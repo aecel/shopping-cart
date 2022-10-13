@@ -26,24 +26,8 @@ const Root = () => {
       nextCart.push(item)
     } else {
       const index = nextCart.indexOf(matchedItem[0])
-      nextCart[index].quantity++
+      nextCart[index].quantity = nextCart[index].quantity + 1
     }
-
-    // let itemInCart = false
-    // // Check if item exists in cart
-    // // If it exists, add 1 to its quantity
-    // for (let i = 0; i < nextCart.length; i++) {
-    //   if (nextCart[i].id === item.id) {
-    //     nextCart[i].quantity = nextCart[i].quantity + 1
-    //     itemInCart = true
-    //   }
-    // }
-
-    // // If item does not exist in cart
-    // // Push new item to the cart
-    // if (!itemInCart) {
-    //   nextCart.push(item)
-    // }
 
     setCart(nextCart)
   }
@@ -72,22 +56,51 @@ const Root = () => {
       return total + itemCost
     }, 0)
 
-    return totalPrice
+    return Math.round(totalPrice * 100) / 100
   }
 
-  useEffect(() => {
-    let nextCart = [...cart]
-    for (const item of menuItems) {
-      nextCart.push(item)
+  const getItemQuantity = (id) => {
+    const matchedItem = cart.filter((item) => {
+      return item.id === id
+    })
+
+    if (matchedItem.length === 0) {
+      return 0
+    } else {
+      return matchedItem[0].quantity
     }
-    setCart(nextCart)
-    // for (const item of menuItems) {
-    //   addOneToCart(item)
-    // }
-  }, [])
+  }
+
+  const changeItemQuantity = (id, value) => {
+    let nextCart = [...cart]
+    const matchedItem = nextCart.filter((item) => {
+      return item.id === id
+    })
+
+    const index = nextCart.indexOf(matchedItem[0])
+
+    if (matchedItem.length === 0) {
+      return null
+    } else if (value === "0") {
+      nextCart[index].quantity = 1
+      nextCart.splice(index, 1)
+      setCart(nextCart)
+    } else if (Number.isInteger(Number(value)) && Number(value) >= 0) {
+      nextCart[index].quantity = Number(value)
+      setCart(nextCart)
+    }
+  }
+
+  const cartFunctions = {
+    addOneToCart,
+    deleteOneFromCart,
+    getTotal,
+    getItemQuantity,
+    changeItemQuantity,
+  }
 
   return (
-    <CartContext.Provider value={cart}>
+    <CartContext.Provider value={{ cart: cart, cartFunctions: cartFunctions }}>
       <div id="root">
         <header>
           <div className="header-left">

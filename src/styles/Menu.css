@@ -1,11 +1,8 @@
 #menu-cards {
   flex: 1;
+  margin: 48px;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 10px;
-  justify-content: center;
-}
-
-body {
-    overflow: auto;
 }
