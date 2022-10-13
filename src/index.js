@@ -1,7 +1,7 @@
 import React from "react"
 import ReactDOM from "react-dom/client"
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
-import App from "./App"
+import Cart from "./routes/Cart"
 import Contact from "./routes/Contact"
 import Home from "./routes/Home"
 import Menu from "./routes/Menu"
@@ -29,6 +29,10 @@ const router = createBrowserRouter([
           {
             path: "contact",
             element: <Contact />,
+          },
+          {
+            path: "cart",
+            element: <Cart />,
           },
         ],
       },

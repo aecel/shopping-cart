@@ -1,0 +1,12 @@
+.menu-card {
+  border: none;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.603);
+  height: 150px;
+  width: 300px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap;
+}

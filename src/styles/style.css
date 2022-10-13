@@ -11,7 +11,10 @@
 html,
 body,
 #root,
-main {
+#homepage,
+#menupage,
+#contactpage,
+#cartpage {
   height: 100%;
   width: 100%;
   padding: 0;
@@ -27,8 +30,8 @@ main {
 }
 
 header {
-  /* padding: 18px 36px; */
-  background-color: #1d1707;
+  padding: 0px 36px;
+  background-color: #141004;
   font-weight: bold;
   font-size: 1.5rem;
 
@@ -36,7 +39,7 @@ header {
   align-items: center;
   justify-content: space-between;
 
-  /* box-shadow: var(--shadow); */
+  box-shadow: var(--shadow);
   z-index: 8;
 }
 
@@ -85,7 +88,7 @@ header {
 
 .logo-container {
   margin: 18px 0;
-  margin-left: 18px;
+  /* margin-left: 18px; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -97,6 +100,41 @@ header {
 .logo {
   height: 50px;
   width: auto;
+}
+
+#carticon {
+  height: 20px;
+  width: auto;
+  align-self: center;
+  justify-self: center;
+}
+
+#cart {
+  padding: 0;
+  margin-left: 20px;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #372e15;
+  cursor: pointer;
+}
+
+#cart-quantity {
+  position: relative;
+  top: 20px;
+  right: 13px;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: rgb(255, 0, 0);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.6rem;
 }
 
 footer {
@@ -112,4 +150,34 @@ footer {
 
 a {
   all: unset;
+}
+
+#homepage {
+  background: url(../images/home-bg.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+.bg-mask {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(24, 15, 5, 0.573);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#menupage {
+  background: url(../images/menu-bg.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+#contactpage {
+  background: url(../images/contact-bg.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+#cartpage {
+  background: url(../images/cart-bg.jpg) no-repeat center center fixed;
+  background-size: cover;
 }
