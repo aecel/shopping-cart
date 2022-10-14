@@ -21,7 +21,7 @@ const MenuCard = ({ item }) => {
       <div className="menu-text">
         <div>{item.name}</div>
 
-        <div className="price-circle">${item.price}</div>
+        <div className="price-circle">${(item.price).toFixed(2)}</div>
       </div>
       <div className="float-buttons">
         {itemQuantity ? (

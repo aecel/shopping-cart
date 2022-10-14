@@ -18,7 +18,7 @@ const Cart = () => {
             return <CartItem key={item.id} item={item} />
           })}
         </div>
-        <h2>Total: $ {total}</h2>
+        <h2>Total: $ {total.toFixed(2)}</h2>
         <button id="checkout-button">Checkout</button>
       </div>
     </div>

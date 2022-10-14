@@ -7,7 +7,7 @@ const CartItem = ({ item }) => {
     <div className="cart-item">
       <div className="cart-item-name">{item.name}</div>
       <div className="cart-item-quantity">{item.quantity}</div>
-      <div className="cart-item-price">$ {itemPrice}</div>
+      <div className="cart-item-price">$ {itemPrice.toFixed(2)}</div>
     </div>
   )
 }

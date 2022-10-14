@@ -111,13 +111,11 @@ const Root = () => {
           </div>
           <div className="header-right">
             <NavLink
-              to={"/home"}
+              to={"/"}
               id="home"
-              className={({ isActive, isPending }) =>
-                isActive
+              className={() =>
+                window.location.pathname === "/"
                   ? "header-tab chosen-tab"
-                  : isPending
-                  ? "header-tab"
                   : "header-tab"
               }
             >
