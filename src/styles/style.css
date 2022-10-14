@@ -130,7 +130,7 @@ header {
   height: 20px;
   width: 20px;
   border-radius: 50%;
-  background-color: rgb(255, 0, 0);
+  background-color: #AE6B06;
 
   display: flex;
   justify-content: center;
@@ -171,7 +171,9 @@ input {
 
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 #menupage {
