@@ -1,19 +1,28 @@
 import { useRef } from "react"
+import { useCart } from "../../routes/Root"
 import style from "../../styles/MenuCard.css"
 
-const MenuCard = ({
-  item,
-  addToCart,
-  deleteFromCart,
-  getItemQuantity,
-  changeItemQuantity,
-}) => {
+const MenuCard = ({ item }) => {
+  const { cart, cartFunctions } = useCart()
+
+  const addToCart = cartFunctions.addOneToCart
+  const deleteFromCart = cartFunctions.deleteOneFromCart
+  const getItemQuantity = cartFunctions.getItemQuantity
+  const changeItemQuantity = cartFunctions.changeItemQuantity
+
   const itemQuantity = getItemQuantity(item.id)
   const inputRef = useRef()
 
   return (
     <div className="menu-card">
-      <div className="menu-text">{item.name}</div>
+      <div className="menu-img-container">
+        <img className="menu-img" src={item.img} />
+      </div>
+      <div className="menu-text">
+        <div>{item.name}</div>
+
+        <div className="price-circle">${item.price}</div>
+      </div>
       <div className="float-buttons">
         {itemQuantity ? (
           <>

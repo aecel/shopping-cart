@@ -8,6 +8,10 @@
   color: white;
 }
 
+html {
+  background-color: #141004;
+}
+
 html,
 body,
 #root,
@@ -24,11 +28,6 @@ body,
   display: flex;
   flex-direction: column;
   overflow: auto;
-}
-
-main {
-  background-color: #313131;
-  padding: 20px;
 }
 
 header {

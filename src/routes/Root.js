@@ -2,7 +2,6 @@ import { NavLink, Outlet } from "react-router-dom"
 import kurowalogo from "../images/kurowa-san-white.svg"
 import carticon from "../images/cart.svg"
 import { createContext, useContext, useEffect, useRef, useState } from "react"
-import menuItems from "../menuItems"
 
 const CartContext = createContext()
 export const useCart = () => useContext(CartContext)
@@ -82,6 +81,7 @@ const Root = () => {
     if (matchedItem.length === 0) {
       return null
     } else if (value === "0") {
+      // Don't delete this line, it won't work without this
       nextCart[index].quantity = 1
       nextCart.splice(index, 1)
       setCart(nextCart)

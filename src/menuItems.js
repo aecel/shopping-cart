@@ -1,8 +1,17 @@
+const importAll = (r) => {
+  return r.keys().map(r)
+}
+
+const menuImages = importAll(
+  require.context("./images/menu/", false, /\.(png|jpe?g|svg)$/)
+)
+
 const croissant = {
   id: window.crypto.randomUUID(),
   name: "Kurowa-san",
   quantity: 1,
   price: 1,
+  img: menuImages[5],
 }
 
 const croisandwich = {
@@ -10,6 +19,7 @@ const croisandwich = {
   name: "Kurowa-sandwich",
   quantity: 1,
   price: 1.4,
+  img: menuImages[2],
 }
 
 const strawberryCroissant = {
@@ -17,6 +27,7 @@ const strawberryCroissant = {
   name: "Strawberry Kurowa-san",
   quantity: 1,
   price: 1.2,
+  img: menuImages[8],
 }
 
 const painAuChocolat = {
@@ -24,6 +35,7 @@ const painAuChocolat = {
   name: "Pain Au Chocolat",
   quantity: 1,
   price: 1.2,
+  img: menuImages[7],
 }
 
 const croissantTray = {
@@ -31,6 +43,7 @@ const croissantTray = {
   name: "Kurowa-san Party",
   quantity: 1,
   price: 4,
+  img: menuImages[9],
 }
 
 const melonpan = {
@@ -38,6 +51,7 @@ const melonpan = {
   name: "Melon-san",
   quantity: 1,
   price: 1,
+  img: menuImages[6],
 }
 
 const dorayaki = {
@@ -45,6 +59,7 @@ const dorayaki = {
   name: "Dorayaki",
   quantity: 1,
   price: 1,
+  img: menuImages[4],
 }
 
 const curryBread = {
@@ -52,6 +67,7 @@ const curryBread = {
   name: "Curry Bread",
   quantity: 1,
   price: 1,
+  img: menuImages[3],
 }
 
 const baguette = {
@@ -59,6 +75,7 @@ const baguette = {
   name: "Baguette",
   quantity: 1,
   price: 1,
+  img: menuImages[1],
 }
 
 const bagel = {
@@ -66,6 +83,7 @@ const bagel = {
   name: "Bagel",
   quantity: 1,
   price: 1,
+  img: menuImages[0],
 }
 
 const menuItems = [
