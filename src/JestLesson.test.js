@@ -2,6 +2,8 @@ import { render, screen } from "@testing-library/react"
 import userEvent from "@testing-library/user-event"
 import JestLesson from "./JestLesson"
 
+// what the hell?
+
 describe("JestLesson component", () => {
   it("renders magnificent monkeys", () => {
     const { container } = render(<JestLesson />)
