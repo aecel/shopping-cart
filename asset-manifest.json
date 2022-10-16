@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/shopping-cart/static/css/main.836c34a3.css",
-    "main.js": "/shopping-cart/static/js/main.d703c386.js",
+    "main.css": "/shopping-cart/static/css/main.9adc4934.css",
+    "main.js": "/shopping-cart/static/js/main.ae3b2ccb.js",
     "static/media/brands-people-yHjcZCaiKFY-unsplash.jpg": "/shopping-cart/static/media/brands-people-yHjcZCaiKFY-unsplash.d415908798d0e6b4a9c2.jpg",
     "static/media/cristi-ursea-MAatMWGJxOQ-unsplash.jpg": "/shopping-cart/static/media/cristi-ursea-MAatMWGJxOQ-unsplash.1d1c3ad00f9245c80a62.jpg",
     "static/media/thomas-mauch-MgCKvdVneGg-unsplash.jpg": "/shopping-cart/static/media/thomas-mauch-MgCKvdVneGg-unsplash.3d0c8844fd3ff89c07ba.jpg",
@@ -35,11 +35,11 @@
     "index.html": "/shopping-cart/index.html",
     "static/media/next.svg": "/shopping-cart/static/media/next.c13f21f8139619576ca7f91892cb7c51.svg",
     "static/media/previous.svg": "/shopping-cart/static/media/previous.756725d59b50dfaeddeed2486270b22a.svg",
-    "main.836c34a3.css.map": "/shopping-cart/static/css/main.836c34a3.css.map",
-    "main.d703c386.js.map": "/shopping-cart/static/js/main.d703c386.js.map"
+    "main.9adc4934.css.map": "/shopping-cart/static/css/main.9adc4934.css.map",
+    "main.ae3b2ccb.js.map": "/shopping-cart/static/js/main.ae3b2ccb.js.map"
   },
   "entrypoints": [
-    "static/css/main.836c34a3.css",
-    "static/js/main.d703c386.js"
+    "static/css/main.9adc4934.css",
+    "static/js/main.ae3b2ccb.js"
   ]
 }
