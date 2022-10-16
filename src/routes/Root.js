@@ -114,7 +114,7 @@ const Root = () => {
               to={"/"}
               id="home"
               className={() =>
-                window.location.pathname === "/"
+                window.location.hash === "#/" || window.location.hash === ""
                   ? "header-tab chosen-tab"
                   : "header-tab"
               }

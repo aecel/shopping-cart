@@ -1,6 +1,9 @@
 import React from "react"
 import ReactDOM from "react-dom/client"
-import { createBrowserRouter, RouterProvider } from "react-router-dom"
+import {
+  createHashRouter,
+  RouterProvider,
+} from "react-router-dom"
 import Cart from "./routes/Cart"
 import Contact from "./routes/Contact"
 import Home from "./routes/Home"
@@ -8,7 +11,7 @@ import Menu from "./routes/Menu"
 import Root from "./routes/Root"
 import style from "./styles/style.css"
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <Root />,
@@ -23,15 +26,15 @@ const router = createBrowserRouter([
             element: <Home />,
           },
           {
-            path: "menu",
+            path: "/menu",
             element: <Menu />,
           },
           {
-            path: "contact",
+            path: "/contact",
             element: <Contact />,
           },
           {
-            path: "cart",
+            path: "/cart",
             element: <Cart />,
           },
         ],

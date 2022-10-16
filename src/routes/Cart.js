@@ -11,8 +11,8 @@ const Cart = () => {
         <div id="checkout-summary">
           <div id="checkout-heading">
             <div id="checkout-heading-title">Item</div>
-            <div style={{ width: "60px", textAlign: "center" }}>Quantity</div>
-            <div style={{ width: "40px"}}>Price</div>
+            <div style={{ width: "70px", textAlign: "center" }}>Quantity</div>
+            <div style={{ width: "70px"}}>Price</div>
           </div>
           {cart.map((item) => {
             return <CartItem key={item.id} item={item} />

@@ -30,6 +30,10 @@
   width: 35px;
   background-color: #cb7e0a;
   border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .add-to-cart:hover {
@@ -46,6 +50,10 @@
   width: 35px;
   background-color: rgb(115, 34, 60);
   border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .delete-from-cart:hover {
