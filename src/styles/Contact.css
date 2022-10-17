@@ -1,0 +1,49 @@
+#contact-mask {
+  background-color: rgba(0, 0, 0, 0.682);
+}
+
+#contact-form {
+  width: 440px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.form-label {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.form-input {
+  padding: 5px 10px;
+  border: 1px solid white;
+  border-radius: 8px;
+  font-size: 0.8rem;
+}
+
+.form-div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input[type="textarea"] {
+  height: 150px;
+  border-radius: 10px;
+}
+
+#contact-button {
+  padding: 15px 25px;
+  background-color: #ae6b06;
+  text-align: center;
+  color: white;
+  border-radius: 10px;
+}
+
+#contact-button:hover {
+  background-color: #dda44e;
+}
+
+#contact-button:active {
+  background-color: #f4dcb9;
+}

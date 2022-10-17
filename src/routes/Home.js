@@ -156,7 +156,7 @@ const Home = () => {
             >
               <div>
                 <h1>Order a Kurowa-san (croissant) today!</h1>
-                <p>Again, this is not real. Sorry.</p>
+                <p>(Again, this is not real. Sorry.)</p>
               </div>
               <NavLink to={"/menu"} className="menu-button">
                 Take me to the menu
