@@ -1,6 +1,6 @@
 import MenuCard from "./components/MenuCard"
 import menuItems from "../menuItems"
-import Menucss from "../styles/Menu.css"
+import "../styles/Menu.css"
 
 const Menu = () => {
   return (

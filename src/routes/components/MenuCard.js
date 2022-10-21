@@ -1,9 +1,9 @@
 import { useRef } from "react"
 import { useCart } from "../../routes/Root"
-import style from "../../styles/MenuCard.css"
+import "../../styles/MenuCard.css"
 
 const MenuCard = ({ item }) => {
-  const { cart, cartFunctions } = useCart()
+  const cartFunctions = useCart().cartFunctions
 
   const addToCart = cartFunctions.addOneToCart
   const deleteFromCart = cartFunctions.deleteOneFromCart
@@ -16,12 +16,12 @@ const MenuCard = ({ item }) => {
   return (
     <div className="menu-card">
       <div className="menu-img-container">
-        <img className="menu-img" src={item.img} />
+        <img className="menu-img" src={item.img} alt={item.name} />
       </div>
       <div className="menu-text">
         <div>{item.name}</div>
 
-        <div className="price-circle">${(item.price).toFixed(2)}</div>
+        <div className="price-circle">${item.price.toFixed(2)}</div>
       </div>
       <div className="float-buttons">
         {itemQuantity ? (

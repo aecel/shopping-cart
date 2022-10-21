@@ -1,10 +1,10 @@
-import style from "../../styles/CartItem.css"
+import "../../styles/CartItem.css"
 import { useRef } from "react"
 import { useCart } from "../../routes/Root"
 
 const CartItem = ({ item }) => {
   const itemPrice = Math.round(item.quantity * item.price * 100) / 100
-  const { cart, cartFunctions } = useCart()
+  const cartFunctions = useCart().cartFunctions
 
   const addToCart = cartFunctions.addOneToCart
   const deleteFromCart = cartFunctions.deleteOneFromCart

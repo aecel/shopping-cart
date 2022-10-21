@@ -9,7 +9,7 @@ import Contact from "./routes/Contact"
 import Home from "./routes/Home"
 import Menu from "./routes/Menu"
 import Root from "./routes/Root"
-import style from "./styles/style.css"
+import "./styles/style.css"
 
 const router = createHashRouter([
   {

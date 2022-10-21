@@ -1,5 +1,5 @@
 import { useCart } from "./Root"
-import style from "../styles/Cart.css"
+import "../styles/Cart.css"
 import CartItem from "./components/CartItem"
 
 const Cart = () => {

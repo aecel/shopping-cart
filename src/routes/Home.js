@@ -1,4 +1,4 @@
-import Homecss from "../styles/Home.css"
+import "../styles/Home.css"
 import { NavLink } from "react-router-dom"
 import imageSlider from "../imageSlider.js"
 import { useEffect, useRef } from "react"
@@ -65,7 +65,11 @@ const Home = () => {
             }}
           >
             <div style={{ display: "flex", gap: "20px" }}>
-              <img style={{ height: "100px", width: "auto" }} src={quoteIcon} />
+              <img
+                style={{ height: "100px", width: "auto" }}
+                src={quoteIcon}
+                alt="Quotation marks"
+              />
               <div
                 style={{
                   borderBottom: "4px solid white",
@@ -119,7 +123,11 @@ const Home = () => {
                   return (
                     <div className="home-circle-div">
                       <div className="home-circle">
-                        <img className="home-circle-img" src={item.img}></img>
+                        <img
+                          className="home-circle-img"
+                          src={item.img}
+                          alt={item.name}
+                        ></img>
                       </div>
                       <div>{item.name}</div>
                     </div>
