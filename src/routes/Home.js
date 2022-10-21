@@ -121,7 +121,7 @@ const Home = () => {
               {menuItems.map((item) => {
                 if (menuItems.indexOf(item) <= 3) {
                   return (
-                    <div className="home-circle-div">
+                    <div className="home-circle-div" key={item.id}>
                       <div className="home-circle">
                         <img
                           className="home-circle-img"
