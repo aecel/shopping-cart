@@ -32,7 +32,7 @@ const Home = () => {
         >
           <div
             className="first-section"
-            style={{ alignItems: "flex-start", gap: "20px", width: "500px" }}
+            style={{ gap: "20px", width: "500px" }}
           >
             <h1 style={{ margin: "0" }}>Welcome to Kurowa-san!</h1>
             <p>
