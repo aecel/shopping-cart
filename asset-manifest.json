@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/shopping-cart/static/css/main.0e2e4138.css",
-    "main.js": "/shopping-cart/static/js/main.fdc94145.js",
+    "main.css": "/shopping-cart/static/css/main.aaa971e4.css",
+    "main.js": "/shopping-cart/static/js/main.393d940a.js",
     "static/media/brands-people-yHjcZCaiKFY-unsplash.jpg": "/shopping-cart/static/media/brands-people-yHjcZCaiKFY-unsplash.d415908798d0e6b4a9c2.jpg",
     "static/media/cristi-ursea-MAatMWGJxOQ-unsplash.jpg": "/shopping-cart/static/media/cristi-ursea-MAatMWGJxOQ-unsplash.1d1c3ad00f9245c80a62.jpg",
     "static/media/thomas-mauch-MgCKvdVneGg-unsplash.jpg": "/shopping-cart/static/media/thomas-mauch-MgCKvdVneGg-unsplash.3d0c8844fd3ff89c07ba.jpg",
@@ -31,15 +31,15 @@
     "static/media/tray.jpg": "/shopping-cart/static/media/tray.baa568110165c7583626.jpg",
     "static/media/kurowa-san-white.svg": "/shopping-cart/static/media/kurowa-san-white.1ff5133d8d8eb0626d74387b46da119b.svg",
     "static/media/cart.svg": "/shopping-cart/static/media/cart.2e8a416f754e3df593bb85a7e0e784c5.svg",
-    "static/media/quote.svg": "/shopping-cart/static/media/quote.fbd7a49f227b28233c7be372ba31047b.svg",
+    "static/media/quote.svg": "/shopping-cart/static/media/quote.2e97aeaa808b2704d59780186a0781ac.svg",
     "index.html": "/shopping-cart/index.html",
     "static/media/next.svg": "/shopping-cart/static/media/next.c13f21f8139619576ca7f91892cb7c51.svg",
     "static/media/previous.svg": "/shopping-cart/static/media/previous.756725d59b50dfaeddeed2486270b22a.svg",
-    "main.0e2e4138.css.map": "/shopping-cart/static/css/main.0e2e4138.css.map",
-    "main.fdc94145.js.map": "/shopping-cart/static/js/main.fdc94145.js.map"
+    "main.aaa971e4.css.map": "/shopping-cart/static/css/main.aaa971e4.css.map",
+    "main.393d940a.js.map": "/shopping-cart/static/js/main.393d940a.js.map"
   },
   "entrypoints": [
-    "static/css/main.0e2e4138.css",
-    "static/js/main.fdc94145.js"
+    "static/css/main.aaa971e4.css",
+    "static/js/main.393d940a.js"
   ]
 }
